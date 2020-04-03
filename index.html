@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<!-- Bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href ="lib/style.css">
+	
+	<!-- Theming -->
+	<link rel="stylesheet" type="text/css" href="lib/theme.css">
+	<script src="lib/theme.js"></script>
+	
+	<title>Makefile Maker</title>
+</head>
+<body>
+
+	<!-- Start Theme -->
+	<script> let theme = new Theme(); theme.install(); theme.start(); </script> 
+
+	
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg sticky-top bm">
+		<a class="navbar-brand fh" href="#">Make Maker</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</nav><br>
+	
+	<div class="container-fluid mb-5" >
+		<div class="row m-2">
+			<!-- Variables -->
+			<div class="card bm col mr-2" >
+				<div class="card-body">
+					<h5 class="card-title fh">Variables</h5>
+					
+				</div>
+			</div>
+			
+			<!-- PHONY list -->
+			<div class="card bm col-4" style="display: none;" id="PhonyList">
+				<div class="card-body" id="PhonyBody">
+					<h5 class="card-title fh">PHONY Targets</h5>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Rules -->
+		<div class="card bm m-2" id="card1">
+			<div class="card-body" >
+				<div class="card-header row mb-2">
+					<h5 class="col fh">Rule 1</h5>
+					<h6 class="mr-3 mb-3 fh" data-toggle="collapse" data-target="#cardform1" style="cursor: pointer;">—</h6>
+				</div>
+				<form id="cardform1" class="collapse show">
+					<div class="form-group row">
+						<label for="cmds" class="col-form-label col-sm-1 fh"><center>Perform</center></label>
+						<input type="text" id="cmds" class="form-control border-secondary col mr-4 bm" placeholder="commands">
+					</div>
+					<div class="form-group row">
+						<div class="input-group">
+							<label for="Targets" class="col-form-label col-sm-1 fh"><center>on</center></label>
+							<input type="text" id="target1" class="form-control border-secondary col mr-4 bm" placeholder="targets">
+							
+							<label for="dpends" class="col-form-label col-sm-2 fh"><center>if there are changes in</center></label>
+							<input type="text" id="dpends" class="form-control border-secondary col mr-4 bm" placeholder="dependencies">
+						</div>
+					</div>
+					<button type="button" id="phonybtn1" class="btn btn-outline-secondary col-1 m-4" onclick="TogglePhony(1)" >PHONY</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- Clean rule -->
+		<div class="card bm m-2" id="cleanrule" style="display: none;">
+			<div class="card-body" >
+				<div class="card-header row mb-2">
+					<h5 class="col fh">Clean Rule</h5>
+					<h6 class="mr-3 mb-3 fh" data-toggle="collapse" data-target="#cleanform" style="cursor: pointer;">—</h6>
+				</div>
+				<form id="cleanform" class="collapse show">
+					<div class="form-group row">
+						<label for="cmds" class="col-form-label col-sm-1 fh"><center>Perform</center></label>
+						<input type="text" id="cmds" class="form-control border-secondary col mr-4 bm" placeholder="commands">
+					</div>
+					<button type="button" id="phonybtnclean" class="btn btn-secondary col-1 m-4" onclick="TogglePhonyClean()" >PHONY</button>
+				</form>
+			</div>
+		</div>
+		
+		<button type="button" id="Rulebtn" class="btn btn-outline-secondary col-1 m-4" onclick="AddRule()" data-toggle="collapse" data-target="#card2">+ Rule</button>
+		<button type="button" id="Cleanbtn" class="btn btn-outline-secondary col-1 m-4" onclick="ShowClean()" data-toggle="collapse" data-target="#cleanrule">+ Clean</button>
+		<button type="button" id="Allbtn" class="btn btn-outline-secondary col-1 m-4" onclick="IncludeAll()" >+ All</button>
+
+	</div>
+	
+	<!-- Overlay -->
+	<div id="overlay" onclick="HideOverlay()">
+		 <div  id="text">Overlay Text</div>
+	</div>
+	
+	<!-- Footer -->
+	<div class="navbar fixed-bottom mt-1 bm">
+		<div class="container">
+			<button class="btn btn-dark">Download</button>
+			<button class="btn btn-secondary" onclick="ShowOverlay()">Preview</button>
+		</div>
+	</div>
+	
+	
+	<!-- Functionality for the page -->
+	<script src="lib/scripts.js"></script>
+
+	<!-- JS Needed for Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	
+</body>
+</html>
