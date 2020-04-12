@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
 
 	<!-- Custom Styles -->
-	<link rel="stylesheet" href ="lib/style.css">
 	
 	<!-- Theming -->
 	<link rel="stylesheet" type="text/css" href="lib/theme.css">
@@ -20,7 +19,6 @@
 
 	<!-- Start Theme -->
 	<script> let theme = new Theme(); theme.install(); theme.start(); </script> 
-
 	
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg sticky-top bm">
@@ -32,16 +30,16 @@
 	
 	<div class="container-fluid mb-5" >
 		<div class="row m-2">
-			<!-- Variables -->
+			<!-- Variables >
 			<div class="card bm col mr-2" >
 				<div class="card-body">
 					<h5 class="card-title fh">Variables</h5>
 					
 				</div>
-			</div>
+			</div-->
 			
 			<!-- PHONY list -->
-			<div class="card bm col-4" style="display: none;" id="PhonyList">
+			<div class="card bm col" style="display: none;" id="PhonyList">
 				<div class="card-body" id="PhonyBody">
 					<h5 class="card-title fh">PHONY Targets</h5>
 				</div>
@@ -98,18 +96,29 @@
 	</div>
 	
 	<!-- Overlay -->
-	<div id="overlay" onclick="HideOverlay()">
-		 <div  id="text">Overlay Text</div>
+	<div class="modal fade" tabindex="-1" role="dialog" id="overlay">
+		<div class="modal-dialog modal-lg modal-dialog-centered " role="document">
+			<div class="modal-content bm">
+				 <div class="modal-header">
+					<h5 class="modal-title fh">Output Makefile</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<pre class="fh"><code>Empty</code></pre>
+				</div>
+			</div>
+		</div>
 	</div>
-	
+
 	<!-- Footer -->
 	<div class="navbar fixed-bottom mt-1 bm">
 		<div class="container">
-			<button class="btn btn-dark">Download</button>
-			<button class="btn btn-secondary" onclick="ShowOverlay()">Preview</button>
+			<a class="btn btn-dark" href="" download="Makefile" id="dlbtn">Download</a>
+			<button class="btn btn-secondary" data-toggle="modal" data-target="#overlay" onclick="CreateMakefile()">Preview</button>
 		</div>
 	</div>
-	
 	
 	<!-- Functionality for the page -->
 	<script src="lib/scripts.js"></script>
