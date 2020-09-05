@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+	<br>
+	<p># Hi, I'm Tyagraj Desigar
+	<p># I also go by Tyagdit
+	<p># I'm an undergrad studying to become a software developer
+	<p># I like linux and python
+	<p># Please don't tell me to do any more web-dev
+
+<!--
+{{ with .Site.Params.social }}
+<center>
+    <p class="social">
+        {{ range sort . "weight" }}
+            {{ if .icon }}
+                <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
+					<img class="img-responsive" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/{{ .name | lower }}.svg" aria-hidden="true"></i>
+                </a>
+            {{ else }}
+                <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a>
+            {{ end }}
+        {{ end }}
+	</p>
+</center>
+{{ end }}
+-->
+
+{{ end }}
