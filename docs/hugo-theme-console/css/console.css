@@ -38,7 +38,7 @@
     --global-line-height: 1.6em;
     --page-width: 70em;
     --display-h1-decoration: 1;
-    --code-bg-color: #20211d;
+    --code-bg-color: #383838;
     --primary-color: #74c5f4;
     --font-color: #f0f0ec;
     --secondary-font-color: #a3a4a5;
@@ -139,6 +139,14 @@ p.social a {
     transition: all 0.2s ease-out;
 }
 
+pre {
+    background-color: var(--code-bg-color);
+}
+
+pre code {
+    overflow: hidden;
+}
+
 .active a {
     text-decoration: underline;
 }
@@ -208,7 +216,7 @@ figure {
 
 .posts-list {
     position: relative;
-    padding-left: 150px;
+    padding-left: 270px;
     top: 0;
     margin-top: 21px;
 }
@@ -221,11 +229,15 @@ figure {
     display: inline-block;
     position: absolute;
     left: 0px;
-    width: 150px;
+    width: 270px;
     height: 100%;
     z-index: 400;
     font-weight: bold;
     color: var(--secondary-font-color);
+}
+
+.posts-list .date:before {
+    content: "-rw-r--r-- ";
 }
 
 @media only screen and (max-width: 850px) {
