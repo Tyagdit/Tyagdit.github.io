@@ -1,4 +1,4 @@
-baseurl = "https://tyagdit.github.io"
+baseurl = "https://tyagdit.github.io/"
 title = "Tyagraj Desigar's site"
 theme = "hugo-theme-console"
 languageCode = "en-us"
