@@ -2,7 +2,6 @@
 title = "Vim Can't Edit Files"
 date = "2021-11-18T20:34:47+05:30"
 cmd = "cat vim-cant-edit-files.md"
-draft = true
 +++
 
 When one thinks of editing files in an editor, the way you expect it to work is, have the contents of the file being edited in memory, being shown in the editor and any changes made to that to be in memory before being saved directly to that file. One would be wrong in thinking that if they used any of the vim flavours

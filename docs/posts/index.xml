@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Tyagraj Desigar&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Sep 2020 20:36:27 +0530</lastBuildDate><atom:link href="https://tyagdit.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Nov 2021 20:34:47 +0530</lastBuildDate><atom:link href="https://tyagdit.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim Can&#39;t Edit Files</title>
+      <link>https://tyagdit.github.io/posts/vim-cant-edit-files/</link>
+      <pubDate>Thu, 18 Nov 2021 20:34:47 +0530</pubDate>
+      
+      <guid>https://tyagdit.github.io/posts/vim-cant-edit-files/</guid>
+      <description>When one thinks of editing files in an editor, the way you expect it to work is, have the contents of the file being edited in memory, being shown in the editor and any changes made to that to be in memory before being saved directly to that file. One would be wrong in thinking that if they used any of the vim flavours
+Background I came across this &amp;ldquo;feature&amp;rdquo; on a completely unrelated bug hunting adventure.</description>
+    </item>
+    
     <item>
       <title>My Experience with GSoC 2020</title>
       <link>https://tyagdit.github.io/posts/gsoc-experience/</link>
