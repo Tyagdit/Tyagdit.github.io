@@ -13,10 +13,13 @@ git submodule update --remote --merge
 # Build the site using config.toml
 hugo
 
+# Hugo might delete the CNAME file from docs/
+[[ -f "docs/CNAME" ]] || printf "nichir.in" > docs/CNAME
+
 git add -A
 
 # Make commit message
-msg="Rebuild site - $(date)"
+msg="Rebuild site"
 if [ -n "$*" ]; then
 	msg=$*
 fi

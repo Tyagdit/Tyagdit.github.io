@@ -1,4 +1,4 @@
-baseurl = "https://tyagdit.github.io/"
+baseurl = "https://nichir.in/"
 title = "Tyagraj Desigar's site"
 theme = "hugo-theme-console"
 languageCode = "en-us"
@@ -15,17 +15,21 @@ publishDir = "docs"
   url = "posts/"
 
   [[params.social]]
-      name = "github"
+      name = "Github"
       weight = 1
       url = "https://github.com/tyagdit"
   [[params.social]]
-      name = "telegram"
+      name = "Telegram"
       weight = 2
       url = "https://t.me/altiboi"
   [[params.social]]
-      name = "matrix"
+      name = "Linkedin"
       weight = 3
+      url = "https://linkedin.com/in/tyagraj-desigar"
+  [[params.social]]
+      name = "Matrix"
+      weight = 4
       url = "https://matrix.to/#/@tyagdit:matrix.org"
   [[params.social]]
       name = "tyagdit<small>[at]</small>gmail<small>[dot]</small>com"
-      weight = 4
+      weight = 5

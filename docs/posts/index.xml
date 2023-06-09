@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Tyagraj Desigar&#39;s site</title>
-    <link>https://tyagdit.github.io/posts/</link>
+    <link>https://nichir.in/posts/</link>
     <description>Recent content in Posts on Tyagraj Desigar&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Nov 2021 20:34:47 +0530</lastBuildDate><atom:link href="https://tyagdit.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Nov 2021 20:34:47 +0530</lastBuildDate><atom:link href="https://nichir.in/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vim Can&#39;t Edit Files</title>
-      <link>https://tyagdit.github.io/posts/vim-cant-edit-files/</link>
+      <link>https://nichir.in/posts/vim-cant-edit-files/</link>
       <pubDate>Thu, 18 Nov 2021 20:34:47 +0530</pubDate>
       
-      <guid>https://tyagdit.github.io/posts/vim-cant-edit-files/</guid>
+      <guid>https://nichir.in/posts/vim-cant-edit-files/</guid>
       <description>When one thinks of editing files in an editor, the way you expect it to work is, have the contents of the file being edited in memory, being shown in the editor and any changes made to that to be in memory before being saved directly to that file. One would be wrong in thinking that if they used any of the vim flavours
 Background I came across this &amp;ldquo;feature&amp;rdquo; on a completely unrelated bug hunting adventure.</description>
     </item>
     
     <item>
       <title>My Experience with GSoC 2020</title>
-      <link>https://tyagdit.github.io/posts/gsoc-experience/</link>
+      <link>https://nichir.in/posts/gsoc-experience/</link>
       <pubDate>Tue, 08 Sep 2020 20:36:27 +0530</pubDate>
       
-      <guid>https://tyagdit.github.io/posts/gsoc-experience/</guid>
+      <guid>https://nichir.in/posts/gsoc-experience/</guid>
       <description>I was fortunate enough to be a part of Google Summer of Code 2020 with matrix. I worked on Opsdroid with Stuart Mumford and Drew Leonard as my mentors. Opsdroid is a python framework for creating platform agnostic bots usable with multiple chat services including matrix.
 The Plan The project&amp;rsquo;s focus was on the interaction layer (called a connector) between opsdroid and matrix. As it stood, the connector used the deprecated matrix-python-sdk and had no support for encryption.</description>
     </item>
     
     <item>
       <title>How I Made This Site</title>
-      <link>https://tyagdit.github.io/posts/how-i-made-this/</link>
+      <link>https://nichir.in/posts/how-i-made-this/</link>
       <pubDate>Sun, 06 Sep 2020 01:52:40 +0530</pubDate>
       
-      <guid>https://tyagdit.github.io/posts/how-i-made-this/</guid>
+      <guid>https://nichir.in/posts/how-i-made-this/</guid>
       <description>I&amp;rsquo;m picky when it comes to stuff like this. I&amp;rsquo;d settled on Hugo since I had prior knowledge of how to use it, more so than jekyll. But the hard part was choosing a theme, in the end I decided to rice a theme I liked but wasn&amp;rsquo;t fully sold on and made my own.
 The theme is still blog-focused but I overrode its homepage for this site.
 Next I looked at how I would deploy it, Github Pages was an easy choice for a broke Indian student, but do I make a separate repo for the pre-build files and final site?</description>

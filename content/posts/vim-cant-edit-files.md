@@ -18,19 +18,23 @@ When you open a file in vim you dont "open" the file, you open a copy of the fil
 
 Now the solution to this isnt very straightforward since this is a pretty core functionality of vim. You have to set the `backupcopy` option to yes, this dictates how the copy of the original file is made and replaced as well as how backups of files is done. Setting this to 'yes' makes it so that vim makes a copy of the file but still overwrites the original. This has a few side effects; from the vim docs:
 
-> - Takes extra time to copy the file.
-> - When the file has special attributes, is a (hard/symbolic) link or has a resource fork, all this is preserved.
-> - When the file is a link the backup will have the name of the link, not of the real file.
+```
+- Takes extra time to copy the file.
+- When the file has special attributes, is a (hard/symbolic) link or has a resource fork, all this is preserved.
+- When the file is a link the backup will have the name of the link, not of the real file.
+```
 
 This means that editing very large files in vim wouldn't be reliable, but setting it to no has worse implications:
 
-> When the file is a link the new file will not be a link.
+```
+When the file is a link the new file will not be a link.
+```
 
 By default vim (or at least neovim) has it set to `auto`  which switches between yes and no based on file attributes to deal with the shortcomings. But since container mounted files or crontab files dont have any way to tell that they need the attributes preserved, vim just uses the default.
 
 Another option is to use vim's modeline feature. These are lines at the end or beginning of a file that set some vim options for that file. To do this make sure `modelines` is set and add this line to the end of the file you want:
 
-```vim
+```
  vim:set backupcopy=yes:
 ```
 
@@ -38,7 +42,7 @@ Another option is to use vim's modeline feature. These are lines at the end or b
 
 Surround this with the appropriate comment string, with the beginning whitespace after the comment character. For instance:
 
-```vim
+```
 /* vim:set backupcopy=yes: */
 ```
 

@@ -2,17 +2,31 @@
 <!--front matter is defined in content/_index.html-->
 
     <br>
-    <p># Hi, I'm Tyagraj Desigar
-    <p># I also go by Tyagdit
-    <p># I'm a B.E. Comp. Sci. student at <a href="https://mmcoe.edu.in">MMCOE</a>
-    <p># I like to fiddle around with Linux and contribute to FOSS
-    <p># I have experience with Python and am currently learning Go
-    <p># Please don't tell me to do any more web-dev
-    <p># I'd probably have some blog posts on this site as well.
-    <p># You can find me on:
+    <p># Hi, I'm Tyagraj Desigar, I also go by tyagdit
+    <p># I'm a Computer Engineer who likes working with infrastructure and cloud technologies
+    <p># A FOSS advocate and (Neo)Vim fan, I like messing with and messing up Linux and related tools
+
+    <p># My technical interests include:<br>
+    <ul>
+        <li> Working with cloud and automation technologies such as IaC, CI/CD, Configuration Management and Microservices
+        <li> Contracting syntactic diabetes from Python and anemia from Go<br>
+        <li> Fiddling with my neovim, terminal and other dev environment configs till they break <br>
+        <li> Being <a href="https://imgs.xkcd.com/comics/the_general_problem.png">this person</a><br>
+    </ul>
+
+    <p># And some of my non-technical interests include:<br>
+    <ul>
+        <li> Recommending soulsborne games to friends
+        <li> Reading <a href="https://scp-wiki.wikidot.com/canon-hub">SCP canons</a>
+        <li> Mining
+        <li> Crafting
+    </ul>
+
+    <p># I'd probably have some articles on this site
     <br><br>
 
 {{ with .Site.Params.social }}
+    <p># You might find me on:
     {{ range sort . "weight" }}
         {{ if .url }}
             <a href="{{ .url }}" aria-label="{{ .name | safeHTML }}">[{{ .name }}]</a>
